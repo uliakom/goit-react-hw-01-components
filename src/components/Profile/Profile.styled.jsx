@@ -2,16 +2,18 @@ import styled from '@emotion/styled';
 
 
 export const ProfileContainer = styled.div `
-margin-bottom: 70px;
+margin-bottom: 40px;
 width: 300px;
-border: 3px dashed tomato;
-&:hover:box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
+border-radius: 20%;
+box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
 -webkit-box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
 -moz-box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
 `;
 
 export const UserContainer = styled.div`
-padding: 50px;
+display:flex;
+flex-direction:column;
+padding: 40px;
 background-color: #fafbfc;
 `;
 
