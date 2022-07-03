@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-const TransactionHistory = ({ items = { transactions } }) => {
+const TransactionHistory = () => {
   return <p></p>;
 };
 
