@@ -7,6 +7,13 @@ border-radius: 10px;
 box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
 -webkit-box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
 -moz-box-shadow: 9px 11px 22px 0px rgba(23,23,23,0.43);
+&:hover,
+&:focus {
+    transform: scale(1.1) ;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+-webkit-transform: scale(1.1) ;
+-moz-transform: scale(1.1) ;
+}
 `;
 
 export const Title = styled.h2`

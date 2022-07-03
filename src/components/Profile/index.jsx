@@ -19,8 +19,7 @@ const Profile = ({username,tag,location,avatar,stats}) => {
   <UserContainer>
     <UserImage
       src={avatar}
-      alt="User avatar"
-      className="avatar"
+     alt="User avatar"             
     />
     <UserName>{username}</UserName>
     <UserTag>@{tag}</UserTag>
