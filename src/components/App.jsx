@@ -4,7 +4,7 @@ import FriendList from './FriendList';
 import TransactionHistory from './TransactionHistory';
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
-import transactions from './TransactionHistory/.transactions.json';
+import transactions from './TransactionHistory/transactions.json';
 import friends from './FriendList/friends.json';
 import { Container, Title } from './App.styled';
 
