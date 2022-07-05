@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const TransactionTable = styled.table`
   width: 900px;
-}
 `;
 
 export const TableHead = styled.thead`
@@ -28,15 +27,13 @@ export const TableHead = styled.thead`
 
 export const TableBody = styled.tbody`
   width: 100%;
-  tr {
-    &: nth-child(2n) {
-      background: rgb(34, 193, 195);
-      background: linear-gradient(
-        0deg,
-        rgba(34, 193, 195, 0.2861519607843137) 15%,
-        rgba(255, 255, 255, 0.5270483193277311) 100%
-      );
-    }
+  tr:nth-child(2n) {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 0.2861519607843137) 15%,
+      rgba(255, 255, 255, 0.5270483193277311) 100%
+    );
   }
 
   td {

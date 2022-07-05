@@ -1,60 +1,30 @@
 import PropTypes from 'prop-types';
-import {
-    ProfileContainer,
-    UserContainer,
-    UserImage,
-    UserName,
-    UserTag,
-    UserLocation,
-    StatsContainer,
-    StatsItem,
-    StatsLabel,
-    StatsQuantity
-} from './Profile.styled';
+import { ProfileContainer } from './Profile.styled';
 
+import UserInfo from './UserInfo';
+import StatsInfo from './StatsInfo';
 
-const Profile = ({username,tag,location,avatar,stats}) => {
-    return (
-         <ProfileContainer >
-  <UserContainer>
-    <UserImage
-      src={avatar}
-     alt="User avatar"             
-    />
-    <UserName>{username}</UserName>
-    <UserTag>@{tag}</UserTag>
-    <UserLocation>{location}</UserLocation>
-  </UserContainer>
-
-  <StatsContainer>
-    <StatsItem>
-      <StatsLabel>Followers</StatsLabel>
-      <StatsQuantity>{stats.followers}</StatsQuantity>
-    </StatsItem>
-    <StatsItem>
-      <StatsLabel>Views</StatsLabel>
-     <StatsQuantity>{stats.views}</StatsQuantity>
-    </StatsItem>
-    <StatsItem>
-      <StatsLabel>Likes</StatsLabel>
-      <StatsQuantity>{stats.likes}</StatsQuantity>
-    </StatsItem>
-  </StatsContainer>
-</ProfileContainer>
-     );
+const Profile = ({ user }) => {
+  return (
+    <ProfileContainer>
+      <UserInfo user={user} />
+      <StatsInfo user={user} />
+    </ProfileContainer>
+  );
 };
-
 
 export default Profile;
 
 Profile.propTypes = {
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
+  user: PropTypes.shape({
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
     stats: PropTypes.shape({
-        followers: PropTypes.number,
-        views: PropTypes.number,
-        likes: PropTypes.number,
-    })
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+    }),
+  }),
 };

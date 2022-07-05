@@ -1,22 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ProfileContainer = styled.div`
-  margin-bottom: 40px;
-  width: 300px;
-  border-radius: 20%;
-  box-shadow: 9px 11px 22px 0px rgba(23, 23, 23, 0.43);
-  -webkit-box-shadow: 9px 11px 22px 0px rgba(23, 23, 23, 0.43);
-  -moz-box-shadow: 9px 11px 22px 0px rgba(23, 23, 23, 0.43);
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-  }
-`;
-
-export const StatsContainer = styled.ul`
+export const Container = styled.ul`
   display: flex;
   flex-wrap: wrap;
   background-color: #dadfe8;
