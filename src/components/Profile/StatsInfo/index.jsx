@@ -6,20 +6,20 @@ import {
   StatsQuantity,
 } from './StatsInfo.styled';
 
-const StatsInfo = ({ user }) => {
+const StatsInfo = ({ stats: { followers, views, likes } }) => {
   return (
     <Container>
       <StatsItem>
         <StatsLabel>Followers</StatsLabel>
-        <StatsQuantity>{user.stats.followers}</StatsQuantity>
+        <StatsQuantity>{followers}</StatsQuantity>
       </StatsItem>
       <StatsItem>
         <StatsLabel>Views</StatsLabel>
-        <StatsQuantity>{user.stats.views}</StatsQuantity>
+        <StatsQuantity>{views}</StatsQuantity>
       </StatsItem>
       <StatsItem>
         <StatsLabel>Likes</StatsLabel>
-        <StatsQuantity>{user.stats.likes}</StatsQuantity>
+        <StatsQuantity>{likes}</StatsQuantity>
       </StatsItem>
     </Container>
   );

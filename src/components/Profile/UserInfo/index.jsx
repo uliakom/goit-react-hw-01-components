@@ -8,13 +8,13 @@ import {
   UserLocation,
 } from './UserInfo.styled';
 
-const UserInfo = ({ user }) => {
+const UserInfo = ({ username, tag, location, avatar }) => {
   return (
     <Container>
-      <UserImage src={user.avatar} alt="User avatar" />
-      <UserName>{user.username}</UserName>
-      <UserTag>@{user.tag}</UserTag>
-      <UserLocation>{user.location}</UserLocation>
+      <UserImage src={avatar} alt="User avatar" />
+      <UserName>{username}</UserName>
+      <UserTag>@{tag}</UserTag>
+      <UserLocation>{location}</UserLocation>
     </Container>
   );
 };

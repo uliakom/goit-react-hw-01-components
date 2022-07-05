@@ -12,14 +12,7 @@ export const App = () => {
   return (
     <Container>
       <Title>Social media profile</Title>
-      <Profile
-        user={user}
-        // username={user.username}
-        // tag={user.tag}
-        // location={user.location}
-        // avatar={user.avatar}
-        // stats={user.stats}
-      />
+      <Profile user={user} />
       <Title>Statistics</Title>
       <Statistics stats={data} />
       <Title>Friends List</Title>

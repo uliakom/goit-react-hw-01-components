@@ -1,14 +1,18 @@
 import PropTypes from 'prop-types';
 import { ProfileContainer } from './Profile.styled';
-
 import UserInfo from './UserInfo';
 import StatsInfo from './StatsInfo';
 
 const Profile = ({ user }) => {
   return (
     <ProfileContainer>
-      <UserInfo user={user} />
-      <StatsInfo user={user} />
+      <UserInfo
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+      />
+      <StatsInfo stats={user.stats} />
     </ProfileContainer>
   );
 };
